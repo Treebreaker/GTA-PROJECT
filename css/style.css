@@ -1,0 +1,320 @@
+@import url('../fonts/stylesheet.css');
+* {
+    box-sizing: border-box;
+    font-family: 'Gilroy', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.auth {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    height: 100vh;
+    width: 100%;
+    padding-left: 6%;
+    padding-bottom: 8.6%;
+    padding-right: 5.6%;
+    background: url('../images/background.png');
+}
+
+.auth .screen-name {
+    position: absolute;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #EAEAF5;
+    top: 3%;
+    left: 3%;
+    z-index: 1;
+}
+
+.auth .signUp {
+    width: 734px;
+    height: 725px;
+    background: linear-gradient(91.02deg, rgba(50, 50, 50, 0.76) 0.84%, rgba(93, 146, 117, 0.038) 104.41%);
+    backdrop-filter: blur(17px);
+    padding: 62px 53px 45px;
+    margin-bottom: 93px;
+}
+
+.auth .signUp .title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.auth .signUp .title .name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 117px;
+    height: 29px;
+    left: 44px;
+    top: 62px;
+    background: #6ECA99;
+    border-radius: 6px;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba(255, 255, 255, 0.81);
+}
+
+.auth .signUp .title .name2 {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 37.5789px;
+    line-height: 47px;
+    background: linear-gradient(90deg, #5D9275 0%, #70D09C 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    margin-top: 5px;
+    margin-bottom: 45px;
+}
+
+.auth .signUp .discription {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.auth .signUp .discription .reg {
+    position: relative;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    color: #EAEAF5;
+}
+
+.cirlce::after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: -10px;
+    width: 20.24px;
+    height: 20.24px;
+    background: url('../images/circle.svg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+}
+
+.auth .signUp .discription .reg2 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    margin-top: 21px;
+    margin-bottom: 33px;
+}
+
+.auth .signUp .discription .reg2 b {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #5D9275;
+}
+
+.auth .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.auth .form .xuy {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.auth .form .xuy span {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+}
+
+.auth .form .input {
+    position: relative;
+    width: 383px;
+    height: 49px;
+    background: #2B2B2B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 19px;
+    margin-bottom: 7px;
+}
+
+.auth .form .input::after {
+    content: '';
+    position: absolute;
+    height: 49px;
+    width: 4px;
+    background: #474747;
+    left: -4px;
+}
+
+.auth .form .input.active::after {
+    background: #5D9275;
+}
+
+.auth .form .input input {
+    width: 100%;
+    height: 100%;
+    background: none;
+    outline: none;
+    border: none;
+    color: #848484;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    margin: 0px;
+}
+
+.other {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #8A8A8A;
+    margin-top: 20px;
+    margin-bottom: 26px;
+}
+
+.btn {
+    position: relative;
+    padding: 6px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 244px;
+    height: 54px;
+    background: #343434;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 12px;
+    color: #5D9275;
+    transition: all .6s;
+    cursor: crosshair;
+    text-transform: uppercase;
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    right: 19px;
+    width: 21px;
+    height: 21px;
+    background: url('../images/arrow.png') no-repeat;
+    background-position: center;
+}
+
+.btn:hover {
+    transform: scale(1.5);
+    color: red;
+}
+
+.auth .vk {
+    position: absolute;
+    bottom: 3%;
+    left: 6%;
+}
+
+.auth .vk span {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+}
+
+.auth .vk a {
+    display: block;
+    width: 38px;
+    height: 38px;
+    background: url('../images/vk.svg') no-repeat;
+    margin-top: 22px;
+    transition: all .2s;
+}
+
+.auth .vk a:hover {
+    transform: rotate(1080deg);
+}
+
+.auth .trevor {
+    position: absolute;
+    width: 786px;
+    height: 965px;
+    background: url('../images/Trevor.png') no-repeat;
+    right: 7%;
+    bottom: 0;
+}
+
+.auth .login {
+    width: 734px;
+    height: 421px;
+    background: linear-gradient(90deg, rgba(50, 50, 50, 0.76) 0%, rgba(93, 146, 117, 0.038) 63.68%);
+    backdrop-filter: blur(17px);
+    padding: 54px;
+}
+
+.auth .login .title {
+    position: relative;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #EAEAF5;
+}
+
+.auth .login p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #8A8A8A;
+    margin-bottom: 11px;
+}
+
+.auth .login p b {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #5D9275;
+}
+
+.auth .login .btn {
+    width: 170px;
+    margin-top: 35px;
+}
+
+.lines {
+    position: absolute;
+    top: 3%;
+    left: 26.12%;
+    width: 552.08px;
+    height: 564.33px;
+    background: url('../images/lines.png') no-repeat;
+    background-position: center;
+    pointer-events: none;
+}
